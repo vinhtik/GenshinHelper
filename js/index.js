@@ -69,10 +69,11 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(data => {
                 if (data) {
                     const rarityClass = data.star_rarity === 5 ? 'rarity-5' : 'rarity-4';
-
+                    let char = data.vision;
                     selectedCharacterSlot.innerHTML = `
                         <div class="container ${rarityClass}">
                             <img class="icon" src="../assets/icons/${characterName}.webp" alt="${characterName}">
+                            <img class="vision" src="../assets/icons/${char}.webp" alt="${char}">
                             <p>${characterName}</p>
                         </div>
                     `;
@@ -93,10 +94,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     .then(data => {
                         if (data) {
                             const rarityClass = data.star_rarity === 5 ? 'rarity-5' : 'rarity-4';
-
+                            let char = data.vision;
                             slot.innerHTML = `
                                 <div class="container ${rarityClass}">
                                     <img class="icon" src="../assets/icons/${predictedCharacter}.webp" alt="${predictedCharacter}">
+                                      <img class="vision" src="../assets/icons/${char}.webp" alt="${char}">
                                     <p>${predictedCharacter}</p>
                                 </div>
                             `;

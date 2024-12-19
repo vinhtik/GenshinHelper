@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     const imgVision = document.createElement('img');
                     imgVision.classList.add('vision');
                     imgVision.src = `../assets/icons/${character.vision}.webp`;
-                    imgVision.alt = character.vision;
+                    imgVision.alt = character.vision; 
 
                     const name = document.createElement('p');
                     name.textContent = character.character_name;
