@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paimon, help me</title>
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+<body>
+    <aside>
+        <div class="logoname"><a class="logotext" href="index.html">Paimon</a></div>
+        <nav>
+            <a href="index.html">
+                <img class="icon-nav" src="./assets/icons/home.webp">
+                Главная</a>
+            <a href="builder.html">
+                <img class="icon-nav" src="./assets/icons/calculator.webp">
+                Сборка отряда</a>
+            <a href="characters.html">
+                <img class="icon-nav" src="./assets/icons/characters.webp">
+                Персонажи</a>
+            <a href="weapons.html">
+                <img class="icon-nav" src="./assets/icons/items.webp">
+                Оружия</a>
+        </nav>
+    </aside>
+    <main>
+        <div id="filters">
+        <h1>Список оружий</h1>
+            <div class="filter-category">
+                <button class="sort-filter" data-filter-type="rarity" data-sort="asc">Редкость ↑</button>
+                <button class="sort-filter" data-filter-type="rarity" data-sort="desc">Редкость ↓</button>
+                <button class="sort-filter" data-filter-type="release_date" data-sort="asc">Дата ↑</button>
+                <button class="sort-filter" data-filter-type="release_date" data-sort="desc">Дата ↓</button>                
+            </div>
+            <div class="filter-category">
+                <img src="../assets/icons2/Sword.webp" alt="Sword" class="icon-filter" data-filter-type="type" data-filter-value="Sword">
+                <img src="../assets/icons2/Claymore.webp" alt="Claymore" class="icon-filter" data-filter-type="type" data-filter-value="Claymore">
+                <img src="../assets/icons2/Catalyst.webp" alt="Catalyst" class="icon-filter" data-filter-type="type" data-filter-value="Catalyst">
+                <img src="../assets/icons2/Bow.webp" alt="Bow" class="icon-filter" data-filter-type="type" data-filter-value="Bow">
+                <img src="../assets/icons2/Polearm.webp" alt="Polearm" class="icon-filter" data-filter-type="type" data-filter-value="Polearm">
+            </div>
+            <div class="filter-category">
+            <button id="reset-filters" class="sort-filter">Сбросить фильтры</button>
+        </div>
+        </div>
+        <div class="contentweapons">
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Имя</th>
+                    <th>Тип</th>
+                    <th>Редкость</th>
+                    <th>Сила атаки</th>
+                    <th>Доп. стат</th>
+                </tr>
+            </thead>
+            <tbody id="weapon-list">
+                <!-- Данные будут загружаться сюда -->
+            </tbody>
+        </table>  
+
+    </div>
+    </main>
+    <footer>
+        Paimon спонсирована печеньками (чья-то курсовая).
+    Genshin Impact, контент и материалы игры являются товарными знаками и принадлежат HoYoverse. <br> Создал Ха Хыу Куанг Винь.
+    
+    </footer>  
+    <script src="./js/weapons.js"></script>  
+    
+</body>
+</html>
